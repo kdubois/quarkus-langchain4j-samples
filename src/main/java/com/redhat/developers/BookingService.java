@@ -27,10 +27,10 @@ public class BookingService {
         return new Booking(bookingNumber, bookingFrom, bookingTo, customer);
     }
 
-    public void cancelBooking(String bookingNumber, String customerName, String customerSurname, LocalDate bookingFrom) {
+    public void cancelBooking(String bookingNumber, String customerName, String customerSurname) {
         ensureExists(bookingNumber, customerName, customerSurname);
 
-        // TODO add logic to only cancel if the conditions are met. 
+        // TODO add logic to double check booking conditions in case the LLM got it wrong.
         // throw new BookingCannotBeCancelledException(bookingNumber);
     }
 

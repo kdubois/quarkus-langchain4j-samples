@@ -22,6 +22,6 @@ public class BookingTools {
 
     @Tool
     public void cancelBooking(String bookingNumber, String customerName, String customerSurname, LocalDate bookingFrom) {
-        bookingService.cancelBooking(bookingNumber, customerName, customerSurname, bookingFrom);
+        bookingService.cancelBooking(bookingNumber, customerName, customerSurname);
     }
 }
