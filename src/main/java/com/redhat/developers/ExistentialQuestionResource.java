@@ -16,6 +16,6 @@ public class ExistentialQuestionResource {
     @Path("/flat")
     @Produces(MediaType.TEXT_PLAIN)
     public String isEarthFlat() {
-        return assistant.chat("What is LangChain4j?");
+        return assistant.chat("Why is the earth flat?");
     }
 }
