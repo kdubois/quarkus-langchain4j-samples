@@ -3,6 +3,7 @@ package com.redhat.developers;
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
+import io.quarkiverse.langchain4j.guardrails.InputGuardrails;
 import jakarta.enterprise.context.SessionScoped;
 
 @RegisterAiService(tools = BookingTools.class)
@@ -17,5 +18,6 @@ public interface AssistantForCustomerSupport {
             "Do NOT cancel the booking if the start date is not compliant with the Cancellation policy in the Terms of Use",
             "Today is {current_date}."
     })
+    @InputGuardrails(PromptInjectionGuard.class)
     String chat(@UserMessage String userMessage);
 }

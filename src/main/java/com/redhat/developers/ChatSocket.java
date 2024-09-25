@@ -1,6 +1,7 @@
 package com.redhat.developers;
 
 import jakarta.websocket.OnOpen;
+import io.quarkus.logging.Log;
 import io.quarkus.websockets.next.OnTextMessage;
 import io.quarkus.websockets.next.WebSocket;
 
@@ -20,6 +21,12 @@ public class ChatSocket {
 
     @OnTextMessage
     public String onMessage(String userMessage){
-        return assistant.chat(userMessage);
+        try {
+            return assistant.chat(userMessage);
+        } catch (Exception e) {
+            Log.error("Error calling the LLM", e);
+            return "Sorry, I am unable to process your request at the moment. Please try again later.";
+        }
+        
     }
 }
