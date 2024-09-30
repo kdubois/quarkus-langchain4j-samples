@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.memory;
 
 import static dev.langchain4j.data.message.UserMessage.userMessage;
 

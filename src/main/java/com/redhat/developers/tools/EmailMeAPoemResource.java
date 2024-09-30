@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.tools;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -6,9 +6,9 @@ import jakarta.ws.rs.Path;
 @Path("/email-me-a-poem")
 public class EmailMeAPoemResource {
 
-    private final AssistantWithContext service;
+    private final AssistantWithContextAndTool service;
 
-    public EmailMeAPoemResource(AssistantWithContext service) {
+    public EmailMeAPoemResource(AssistantWithContextAndTool service) {
         this.service = service;
     }
 

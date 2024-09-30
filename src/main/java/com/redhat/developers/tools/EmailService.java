@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.tools;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;

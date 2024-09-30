@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.chatbotwithguadrails;
 
 import jakarta.inject.Singleton;
 

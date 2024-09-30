@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.chatbotwithguadrails;
 
 import java.time.LocalDate;
 import org.eclipse.microprofile.config.inject.ConfigProperty;

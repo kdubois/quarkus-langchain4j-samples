@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.prompt;
 
 import io.quarkiverse.langchain4j.RegisterAiService;
 

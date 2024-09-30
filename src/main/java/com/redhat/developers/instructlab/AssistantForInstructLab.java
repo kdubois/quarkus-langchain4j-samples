@@ -1,12 +1,10 @@
-package com.redhat.developers;
+package com.redhat.developers.instructlab;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
-import jakarta.enterprise.context.SessionScoped;
 
 @RegisterAiService()
-@SessionScoped
 public interface AssistantForInstructLab {
 
     @SystemMessage({

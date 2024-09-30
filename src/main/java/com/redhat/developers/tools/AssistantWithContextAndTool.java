@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.tools;
 
 
 import dev.langchain4j.service.SystemMessage;
@@ -6,7 +6,7 @@ import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
 
 @RegisterAiService(tools = EmailService.class)
-public interface AssistantWithContext {
+public interface AssistantWithContextAndTool {
 
     /**
      * Ask the LLM to create a poem about the given topic.

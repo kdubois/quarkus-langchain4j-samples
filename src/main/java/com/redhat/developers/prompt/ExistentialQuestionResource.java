@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.prompt;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;

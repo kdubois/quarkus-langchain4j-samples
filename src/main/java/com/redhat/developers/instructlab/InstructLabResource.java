@@ -1,4 +1,4 @@
-package com.redhat.developers;
+package com.redhat.developers.instructlab;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
