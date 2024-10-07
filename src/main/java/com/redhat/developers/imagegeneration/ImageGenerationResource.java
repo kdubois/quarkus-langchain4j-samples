@@ -3,8 +3,6 @@ package com.redhat.developers.imagegeneration;
 import java.net.URI;
 import java.nio.file.Paths;
 
-import dev.langchain4j.data.image.Image;
-import dev.langchain4j.model.output.Response;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
