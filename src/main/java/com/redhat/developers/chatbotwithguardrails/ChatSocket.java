@@ -1,4 +1,4 @@
-package com.redhat.developers.chatbotwithguadrails;
+package com.redhat.developers.chatbotwithguardrails;
 
 import jakarta.websocket.OnOpen;
 import io.quarkus.logging.Log;

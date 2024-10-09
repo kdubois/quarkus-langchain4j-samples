@@ -1,4 +1,4 @@
-package com.redhat.developers.chatbotwithguadrails;
+package com.redhat.developers.chatbotwithguardrails;
 
 import dev.langchain4j.data.message.UserMessage;
 import io.quarkiverse.langchain4j.guardrails.InputGuardrail;

@@ -1,4 +1,4 @@
-package com.redhat.developers.chatbotwithguadrails;
+package com.redhat.developers.chatbotwithguardrails;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

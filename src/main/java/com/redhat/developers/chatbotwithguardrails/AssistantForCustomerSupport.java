@@ -1,4 +1,4 @@
-package com.redhat.developers.chatbotwithguadrails;
+package com.redhat.developers.chatbotwithguardrails;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
