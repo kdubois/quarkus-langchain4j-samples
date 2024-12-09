@@ -3,7 +3,9 @@ package com.redhat.developers.chatbotwithguardrails;
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
+import jakarta.enterprise.context.SessionScoped;
 
+@SessionScoped
 @RegisterAiService
 public interface PromptInjectionDetectionService {
     @SystemMessage("""

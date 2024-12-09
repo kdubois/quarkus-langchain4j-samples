@@ -28,10 +28,7 @@ public class BookingService {
     }
 
     public void cancelBooking(String bookingNumber, String customerName, String customerSurname) {
-        ensureExists(bookingNumber, customerName, customerSurname);
-
-        // TODO add logic to double check booking conditions in case the LLM got it wrong.
-        // throw new BookingCannotBeCancelledException(bookingNumber);
+        ensureExists(bookingNumber, customerName, customerSurname);  
     }
 
     private void ensureExists(String bookingNumber, String customerName, String customerSurname) {

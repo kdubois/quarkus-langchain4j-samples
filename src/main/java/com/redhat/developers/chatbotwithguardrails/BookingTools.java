@@ -1,9 +1,6 @@
 package com.redhat.developers.chatbotwithguardrails;
 
 import jakarta.inject.Singleton;
-
-import java.time.LocalDate;
-
 import dev.langchain4j.agent.tool.Tool;
 
 @Singleton

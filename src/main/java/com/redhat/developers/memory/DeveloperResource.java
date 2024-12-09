@@ -30,7 +30,7 @@ public class DeveloperResource {
     @GET
     @Path("/guess")
     @Produces(MediaType.TEXT_PLAIN)
-    public void guessWho() {
+    public void guessWho() {       
 
         System.out.println(assistant.chat(1, "Hello, my name is Klaus, and I'm a Doctor"));
 
