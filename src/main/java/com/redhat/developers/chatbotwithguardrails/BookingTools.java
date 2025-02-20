@@ -1,5 +1,6 @@
 package com.redhat.developers.chatbotwithguardrails;
 
+import io.quarkus.logging.Log;
 import jakarta.inject.Singleton;
 import dev.langchain4j.agent.tool.Tool;
 

@@ -18,7 +18,7 @@ public interface AssistantWithContextAndTool {
     @SystemMessage("You are a professional poet")
     @UserMessage("""
             Write a poem about {topic}. The poem should be {lines} lines long.
-            Then send this poem by email. Your response should include the poem.
+            Then send this poem by email using the tool provided in the context.
             """)
     String writeAPoem(String topic, int lines);
 

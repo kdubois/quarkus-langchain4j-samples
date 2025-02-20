@@ -1,6 +1,8 @@
 package com.redhat.developers.chatbotwithguardrails;
 
 import java.time.LocalDate;
+
+import io.quarkus.logging.Log;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import jakarta.enterprise.context.ApplicationScoped;
@@ -28,7 +30,9 @@ public class BookingService {
     }
 
     public void cancelBooking(String bookingNumber, String customerName, String customerSurname) {
-        ensureExists(bookingNumber, customerName, customerSurname);  
+        ensureExists(bookingNumber, customerName, customerSurname);
+        // pretend like we're cancelling the booking
+        Log.info("Booking cancelled for user " + customerName + " " + customerSurname);
     }
 
     private void ensureExists(String bookingNumber, String customerName, String customerSurname) {
