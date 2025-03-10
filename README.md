@@ -1,4 +1,4 @@
-# quarkus-langchain-app
+# quarkus-langchain4j-app
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
