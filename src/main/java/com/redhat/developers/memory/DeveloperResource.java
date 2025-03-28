@@ -47,30 +47,23 @@ public class DeveloperResource {
     @Produces(MediaType.TEXT_PLAIN)
     public void createRestEndpoint() {
 
-        Tokenizer tokenizer = new OpenAiTokenizer();
-        ChatMemory chatMemory = TokenWindowChatMemory.withMaxTokens(1000, tokenizer);
+        String message1 = "How to write a REST endpoint in Java?";
 
-        UserMessage userMessage1 = userMessage(
-                "How to write a REST endpoint in Java? ");
-        chatMemory.add(userMessage1);
+        System.out.println("[User]: " + message1 + System.lineSeparator());
 
-        System.out.println("[User]: " + userMessage1.singleText() + System.lineSeparator());
+        String response1 = assistant.chat(1, message1);
 
-        final Response<AiMessage> response1 = model.generate(chatMemory.messages());
-        chatMemory.add(response1.content());
+        System.out.println("[LLM]: " + response1 + System.lineSeparator());
 
-        System.out.println("[LLM]: " + response1.content().text() + System.lineSeparator());
-
-        UserMessage userMessage2 = userMessage(
+        String userMessage2 =
                 "Create a test of the first point? " +
-                        "Be short, 15 lines of code maximum.");
-        chatMemory.add(userMessage2);
+                        "Be short, 15 lines of code maximum.";
 
-        System.out.println("[User]: " + userMessage2.singleText() + System.lineSeparator());
+        System.out.println("[User]: " + userMessage2 + System.lineSeparator());
 
-        final Response<AiMessage> response2 = model.generate(chatMemory.messages());
+        String response2 = assistant.chat(1, userMessage2);
 
-        System.out.println("[LLM]: " + response2.content().text() + System.lineSeparator());
+        System.out.println("[LLM]: " + response2 + System.lineSeparator());
 
     }
 
