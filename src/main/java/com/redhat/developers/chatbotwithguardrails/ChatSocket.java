@@ -1,7 +1,7 @@
 package com.redhat.developers.chatbotwithguardrails;
 
+import dev.langchain4j.guardrail.InputGuardrailException;
 import jakarta.websocket.OnOpen;
-import io.quarkiverse.langchain4j.runtime.aiservice.GuardrailException;
 import io.quarkus.logging.Log;
 import io.quarkus.websockets.next.OnTextMessage;
 import io.quarkus.websockets.next.WebSocket;
@@ -24,7 +24,7 @@ public class ChatSocket {
     public String onMessage(String userMessage) {
         try {
             return assistant.chat(userMessage);
-        } catch (GuardrailException e) {
+        } catch (InputGuardrailException e) {
             Log.error("Error calling the LLM", e);
             return "Sorry, your request triggered a security alert. Please rephrase your question.";
         } catch (Exception e) {

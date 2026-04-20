@@ -1,13 +1,13 @@
 package com.redhat.developers.chatbotwithguardrails;
 
 import dev.langchain4j.data.message.UserMessage;
-import io.quarkiverse.langchain4j.guardrails.InputGuardrail;
-import io.quarkiverse.langchain4j.guardrails.InputGuardrailResult;
+import dev.langchain4j.guardrail.InputGuardrail;
+import dev.langchain4j.guardrail.InputGuardrailResult;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public class PromptInjectionGuard implements InputGuardrail{
-        private final PromptInjectionDetectionService service;
+public class PromptInjectionGuard implements InputGuardrail {
+    private final PromptInjectionDetectionService service;
 
     public PromptInjectionGuard(PromptInjectionDetectionService service) {
         this.service = service;

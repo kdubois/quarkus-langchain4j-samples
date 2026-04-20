@@ -2,8 +2,8 @@ package com.redhat.developers.chatbotwithguardrails;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
+import dev.langchain4j.service.guardrail.InputGuardrails;
 import io.quarkiverse.langchain4j.RegisterAiService;
-import io.quarkiverse.langchain4j.guardrails.InputGuardrails;
 import jakarta.enterprise.context.SessionScoped;
 
 @RegisterAiService(tools = BookingTools.class)
