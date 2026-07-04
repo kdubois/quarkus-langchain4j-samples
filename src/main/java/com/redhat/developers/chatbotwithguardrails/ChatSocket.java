@@ -1,8 +1,8 @@
 package com.redhat.developers.chatbotwithguardrails;
 
 import dev.langchain4j.guardrail.InputGuardrailException;
-import jakarta.websocket.OnOpen;
 import io.quarkus.logging.Log;
+import io.quarkus.websockets.next.OnOpen;
 import io.quarkus.websockets.next.OnTextMessage;
 import io.quarkus.websockets.next.WebSocket;
 
